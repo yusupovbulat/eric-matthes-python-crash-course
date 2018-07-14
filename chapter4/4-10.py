@@ -1,5 +1,5 @@
 pizzas = ['mozzarella', 'neapolitan', 'italy', 'diablo', 'four cheese']
-print('The first three items in the list are:') 
+print('The first three items in the list are:')
 for pizza in pizzas[:3]:
     print(pizza.title())
 
