@@ -1,4 +1,4 @@
-age = int(input("Please enter your age "))
+age = int(input("Please enter your age: "))
 
 message = "The price of your ticket is "
 price = ""
