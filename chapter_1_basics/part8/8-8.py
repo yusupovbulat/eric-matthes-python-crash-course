@@ -6,7 +6,7 @@ def make_album(artist, album, tracks=''):
 
 while True:
     print("\nPlease enter information about the artist's album")
-    print("(enter 'q'at any time to quit)")
+    print("(enter 'q' at any time to quit)")
 
     artist = input("Artist: ")
     if artist == 'q':
@@ -16,5 +16,6 @@ while True:
     if album == 'q':
         break
 
-    alb_art = make_album(artist, album)
-    print("Artist's album: " + alb_art)
+    a_a = make_album(artist, album)
+    for key, response in a_a.items():
+        print(key + ' ' + response)
