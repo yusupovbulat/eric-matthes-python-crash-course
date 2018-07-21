@@ -1,23 +1,7 @@
-def print_models(unprinting_designs, completed_models):
-    """
-    Имитирует печать моделей, пока список не станет пустым.
-    Каждая модель после печати перемещатеся в completed_models.
-    """
-    while unprinting_designs:
-        current_design = unprinting_designs.pop()
-        # Имитация печати модели на 3D-принтере
-        print('Printing models: ' + current_design)
-        completed_models.append(current_design)
+import printing_functions as pf
 
 
-def show_completed_models(completed_models):
-    """Выводит информацию обо всех напечатанных моделях."""
-    print('\nThe following models have been printed:')
-    for completed_model in completed_models:
-        print(completed_model)
-
-# Список моделей, которые необходимо напечатать
 unprinting_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
-print_models(unprinting_designs, completed_models)
-show_completed_models(completed_models)
+pf.print_models(unprinting_designs, completed_models)
+pf.show_completed_models(completed_models)
