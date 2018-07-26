@@ -10,6 +10,12 @@ class Restaurant():
     def open_restaurant(self):
         print('Restaurant ' + self.name.title() + ' is open.')
 
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+
+
+
 restaurant = Restaurant('Testname', 'Asian')
 print('The restaurant name is ' + restaurant.name.title() + '.')
 print('In this restaurant ' + restaurant.cuisine + ' cuisine.')
