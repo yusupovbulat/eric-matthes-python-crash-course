@@ -11,13 +11,13 @@ class Restaurant():
         print('Restaurant ' + self.name.title() + ' is open.')
 
 class IceCreamStand(Restaurant):
-    def __init__(self, restaurant_name, cuisine_type):
+    def __init__(self, restaurant_name, cuisine_type, flavors):
         super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+
+    def print_flavors(self):
+        print(self.flavors)
 
 
-
-restaurant = Restaurant('Testname', 'Asian')
-print('The restaurant name is ' + restaurant.name.title() + '.')
-print('In this restaurant ' + restaurant.cuisine + ' cuisine.')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+icecream = IceCreamStand('test', 'ice cream', 'chocolate')
+icecream.print_flavors()
