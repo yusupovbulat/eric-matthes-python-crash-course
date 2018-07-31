@@ -43,11 +43,11 @@ class Battery():
     def get_range(self):
         """Displays approximate run reserve for the battery"""
         if self.battery_size == 70:
-            range = 240
+            ranges = 240
         elif self.battery_size == 85:
-            range = 270
+            ranges = 270
 
-        message = 'This car can go approximately ' + str(range)
+        message = 'This car can go approximately ' + str(ranges)
         message += ' miles on a full charge.'
         print(message)
 
@@ -57,5 +57,5 @@ class ElectricCar(Car):
         """Initialization atribute from superclass.
         Then initializate specific atribute for electic cars"""
         super().__init__(make, model, year)
-        self.battery_size = Battery()
+        self.battery = Battery()
 
