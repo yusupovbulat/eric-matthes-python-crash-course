@@ -23,10 +23,11 @@ class Admin(User):
        self.priveleges = Priveleges(priveleges)
 
     def admin_info(self):
-        print('Admin: ' + self.first_name.title() + ' ' + self.last_name.title())
+        print('\nAdmin: ' + self.first_name.title() + ' ' + self.last_name.title())
         print('Age: ' + str(self.age))
         print('Location: ' + self.location.title())
-        print('Priveleges: ' + str(self.priveleges))
+        print('Priveleges:')
+        self.priveleges.show_priveleges()
 
 class Priveleges():
     def __init__(self, priveleges):
