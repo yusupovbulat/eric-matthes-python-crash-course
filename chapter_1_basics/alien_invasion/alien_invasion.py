@@ -12,7 +12,7 @@ def run_game():
             (ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("Alien Invasion")
 
-    #Make a ship.
+    # Make a ship.
     ship = Ship(ai_settings, screen)
 
     # Start the main loop for the game.
@@ -20,5 +20,6 @@ def run_game():
         gf.check_events(ship)
         ship.update()
         gf.update_screen(ai_settings, screen, ship)
+
 
 run_game()
